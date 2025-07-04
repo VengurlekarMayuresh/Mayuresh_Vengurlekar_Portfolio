@@ -8,7 +8,7 @@ import "animate.css";
 export default function Main() {
   
   return (
-    <div className="flex lg:flex-row  lg:h-[90vh]   flex-col lg:items-start items-center justify-center gap-5 lg:gap-20 p-5 lg:pt-30 overflow-x-hidden relative">
+    <div className="flex lg:flex-row h-[90vh] flex-col lg:items-start items-center justify-center gap-5 lg:gap-20 p-5 lg:pt-30 overflow-x-hidden relative">
       
       {/* LEFT CONTENT */}
       <motion.div
