@@ -1,13 +1,14 @@
 import { Typewriter } from "react-simple-typewriter";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Downlaod from "./button";
+import { useEffect } from "react";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { motion } from "framer-motion";
 import "animate.css";
 
 export default function Main() {
+  
   return (
-    <div className="flex lg:flex-row h-screen flex-col lg:items-start items-center justify-center gap-5 lg:gap-20 p-5 pt-10 lg:pt-30 overflow-x-hidden relative">
+    <div className="flex lg:flex-row h-[92vh] lg:h-[90vh]   flex-col lg:items-start items-center justify-center gap-5 lg:gap-20 p-5 lg:pt-30 overflow-x-hidden relative">
       
       {/* LEFT CONTENT */}
       <motion.div
@@ -75,19 +76,16 @@ export default function Main() {
       </motion.div>
 
       {/* WALKING LOTTIE BOTTOM */}
-      <motion.div
-        className="absolute bottom-5 left-0 w-20 md:w-42"
-        initial={{ opacity: 0, x: -30 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        viewport={{ once: false }}
-      >
-        <DotLottieReact
-          src="https://lottie.host/b4ae4334-dd9d-4524-b54a-68361784fdc0/GGsAoHBF8P.lottie"
-          loop
-          autoplay
-        />
-      </motion.div>
+  <div className="walker-container">
+  <div className="walker">
+    <DotLottieReact
+      src="https://lottie.host/b4ae4334-dd9d-4524-b54a-68361784fdc0/GGsAoHBF8P.lottie"
+      loop
+      autoplay
+    />
+  </div>
+</div>
+
     </div>
   );
 }

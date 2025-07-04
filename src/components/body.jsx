@@ -4,22 +4,22 @@ import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-
 export default function Body({ open }) {
   return (
     <div
-      className={`md:hidden fixed   inset-0 bg-[#0a0a0a]/80 backdrop-blur-md z-40 ${
+      className={`md:hidden fixed overflow-x-hidden  inset-0 bg-[#0a0a0a]/80 backdrop-blur-md z-40 ${
         open ? "block" : "hidden"
       } transition-all duration-500 ease-in-out font-poppins`}
     >
-      <ul className="flex flex-col min-h-[100vh] justify-center items-center gap-6  text-white text-2xl font-semibold">
+      <ul className=" flex flex-col h-[90vh] w-auto justify-center items-center gap-6   text-white text-2xl font-semibold">
         <li className={` effect`}>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
-        <li className={`${open ? "animate-slide-down delay-[300ms]" : ""} effect`}>
-          <a href="#">About Me</a>
+        <li className={`effect`}>
+          <a href="#about">About Me</a>
         </li>
-        <li className={`${open ? "animate-slide-down delay-[500ms]" : ""} effect`}>
-          <a href="#">Project</a>
+        <li className={`effect`}>
+          <a href="#projects">Project</a>
         </li>
-        <li className={`${open ? "animate-slide-down delay-[700ms]" : ""} effect`}>
-          <a href="#">Contact</a>
+        <li className={` effect`}>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
 

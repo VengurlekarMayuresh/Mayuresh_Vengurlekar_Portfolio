@@ -17,7 +17,7 @@ function App() {
   return (
   
   <>
-<VantaClouds/>
+{/* <VantaClouds/> */}
   <Header/>
 
 <section id="home">
