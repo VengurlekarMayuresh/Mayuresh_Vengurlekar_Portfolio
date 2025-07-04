@@ -85,7 +85,7 @@ body {
   @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl;
   font-family: "Playfair Display", serif;
   /* background: linear-gradient(135deg, #a9e7eb, #03fafa); */
-  -webkit-background-clip: text;
+  /* -webkit-background-clip: text; */
   /* -webkit-text-fill-color: transparent; */
   font-weight: bold;
 }
