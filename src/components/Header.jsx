@@ -17,7 +17,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="w-full flex items-center justify-between px-6 py-4 sticky top-0 z-50 bg-white-500/30 backdrop-blur-lg  text-white font-poppins">
+      <header className="w-full flex items-center justify-between px-6 py-4 fixed top-0 z-50 bg-white-500/30 backdrop-blur-lg  text-white font-poppins">
         {/* Logo */}
         <img src="/logo1-Photoroom 1.svg" className="h-10" alt="Logo" />
 
