@@ -8,10 +8,18 @@ export default function Project() {
         My Project Work
       </h1>
       <div className="my-4 flex flex-col lg:flex-row lg:justify-evenly justify-center items-center">
+        
+        <ProjectCard
+          photo="public\MASSS-Healthcare.jpeg"
+          title="MASSS Healthcare"
+          desc="A full-stack healthcare platform built using the MERN stack that enables doctors to register, manage availability, and create appointment slots while allowing patients to book, cancel, and reschedule appointments seamlessly. The system includes automated email notifications, a healthcare facility directory."        
+           link="https://github.com/VengurlekarMayuresh/wdl" 
+          />
+      
         <ProjectCard
           photo="./heart_ss.jpg"
           title="Heart Disease Prediction"
-          desc="An AI-powered heart disease prediction web application that leverages machine learning algorithms to assess a user's risk based on clinical parameters. The model is trained on a publicly available dataset sourced from Kaggle, ensuring both accuracy and transparency"
+          desc="A heart disease prediction web application that leverages machine learning algorithms to assess a user's risk based on clinical parameters. The model is trained on a publicly available dataset sourced from Kaggle, ensuring both accuracy and transparency"
           link="https://github.com/VengurlekarMayuresh/Heart-Disease-Predictor"
         />
 
@@ -19,9 +27,10 @@ export default function Project() {
           photo="./Airbnb.png"
           title="AIRBNB CLONE"
           desc="A full-stack Airbnb clone that lets users browse, book, and list rental properties. It features user authentication, interactive maps, booking management, and a modern, responsive UI — delivering a real-world rental experience."
-
           link="https://github.com/VengurlekarMayuresh/WanderLust"
+        
         />
+
       </div>
     </div>
   );

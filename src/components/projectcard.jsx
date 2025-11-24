@@ -4,9 +4,9 @@ import { Font } from "three/examples/jsm/Addons.js";
 
 export default function ProjectCard({ photo, title, desc, link }) {
   return (
-    <div className="group transition-all duration-300 hover:scale-[1.02] w-[22rem] mx-8 my-20 rounded-2xl overflow-hidden border-2 border-cyan-400 shadow-lg">
+    <div className="group h-[430px] transition-all duration-300 hover:scale-[1.02] w-[22rem] mx-8 my-20 rounded-2xl overflow-hidden border-2 border-cyan-400 shadow-lg">
       {/* Image Section */}
-      <div className="relative overflow-hidden">
+      <div className="relative overflow-hidden ">
         <img
           src={photo}
           className="project-img w-full h-52 object-cover transform transition-transform duration-500 group-hover:scale-110"
